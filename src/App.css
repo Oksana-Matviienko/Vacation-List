@@ -1,38 +1,72 @@
-.App {
+body{
+  background-image: url(mainBody.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+.app{
+  min-height: 90vh;
+  background-color: rgba(122, 231, 231, 0.842);
+  width: 80%;
+  margin: 20px auto;
+  border-radius: 50px;
+}
+.container{
+  display: flex;
+  justify-content: center;
+}
+h1{
+  color: rgb(74, 69, 88);
+  font-family: 'Pacifico', cursive;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.crossed{
+  text-decoration: line-through 2px black;
+  background-color: rgb(61, 141, 114);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ li{
+  list-style-type: none;
+  padding: 10px;
+  margin: 0;
+  font-size: 22px;
+  font-family: 'Pacifico', cursive;
+  text-align: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+input{
+width: 500px;
+padding: 10px;
+border: none;
+border-radius: 50px;
+font-family: 'Pacifico', cursive;
+font-size: 18px;
+}
+button{
+width: 400px;
+padding: 10px;
+border: none;
+border-radius: 50px;
+font-family: 'Pacifico', cursive;
+font-size: 20px;
+margin: 5px;
+}
+.add{
+  background-color: rgb(27, 185, 133);
+  color: white;
+}
+.delete{
+  background-color: rgb(206, 54, 100);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media all and (max-width: 800px){
+  h1{
+    font-size: 20px;
   }
-  to {
-    transform: rotate(360deg);
+  input{
+    width: 70%;
+  }
+  button{
+    width: 60%;
   }
 }
