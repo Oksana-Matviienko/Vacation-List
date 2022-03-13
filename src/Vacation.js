@@ -15,7 +15,7 @@ vacationList:[],
 
    addItem(input){
       if(input === ""){
-         alert("Пожалуйста, введите текст")
+         alert("Please, enter some text")
       }
       else{
       let listArray = this.state.vacationList;
@@ -47,7 +47,7 @@ render(){
          <form onSubmit={this.onFormSubmit}>
          <div className="container">
             <input type="text" 
-            placeholder="Что будем брать?"
+            placeholder="What do you want to take?"
             value={this.state.userInput}
             onChange={(e) => {this.onChangeEvent(e.target.value)}} />
          </div>
@@ -58,10 +58,10 @@ render(){
          </ul>
          </div>
          <div className="container">
-            <button className="add" onClick={() => this.addItem(this.state.userInput)} >Берем!</button>
+            <button className="add" onClick={() => this.addItem(this.state.userInput)} >Take it!</button>
          </div>
          <div className="container">
-            <button className="delete" onClick={() => this.deleteItem()} >Удалить всё</button>
+            <button className="delete" onClick={() => this.deleteItem()} >Delete all</button>
          </div>
          </form>
       </div>
